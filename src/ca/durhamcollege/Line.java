@@ -33,18 +33,19 @@ public class Line
         setEnd(end);
     }
 
+    // computed property
     public float getLength()
     {
         return Vector2D.distance(getStart(), getEnd());
     }
 
     // constructors
-    Line()
+    public Line()
     {
         set(Vector2D.zero(), Vector2D.zero());
     }
 
-    Line(Vector2D start, Vector2D end)
+    public Line(Vector2D start, Vector2D end)
     {
        set(start, end);
     }
