@@ -42,9 +42,30 @@ public abstract class Shape
             {
                 this.edges.add(new Line(this.vertices.get(i), this.vertices.get(0)));
             }
-
         }
     }
 
     // public methods
+
+    @Override
+    public String toString()
+    {
+        String outputString = "";
+        outputString += "--------------------------------\n";
+        outputString += "Vertices: \n";
+        outputString += "--------------------------------\n";
+        for ( var vertex: vertices )
+        {
+            outputString += vertex.toString() + "\n";
+        }
+        outputString += "\n--------------------------------\n";
+        outputString += "Edges: \n";
+        outputString += "--------------------------------\n";
+        for ( var edge: edges )
+        {
+            outputString += edge.toString() + "\n";
+        }
+
+        return outputString;
+    }
 }

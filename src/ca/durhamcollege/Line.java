@@ -52,4 +52,10 @@ public class Line
     // private methods
 
     // public methods
+
+    @Override
+    public String toString()
+    {
+        return "start: " + getStart().toString() + " end:" + getEnd().toString() + " length: " + getLength();
+    }
 }
